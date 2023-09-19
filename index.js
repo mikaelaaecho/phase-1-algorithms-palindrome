@@ -1,10 +1,21 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+ let start = 0;
+ let end = word.length - 1;
+ while (start < end) {
+  if (word[start] !== word[end]) {
+    return false;
+  }
+  start++;
+  end--;
+ }
+ return true;
 }
 
-/* 
-  Add your pseudocode here
-*/
+//1. create a function names isPalindrome that takes a string as an argument
+//2. dicipher the start and the end of the word
+//3.if the start chracter is not the same as the end charcter then read false
+//4. if the loop is complete that means that palindrome is true and return true
+
 
 /*
   Add written explanation of your solution here
